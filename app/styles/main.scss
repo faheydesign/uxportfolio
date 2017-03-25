@@ -478,15 +478,21 @@ header{
   max-width:1400px;
   margin:3px auto 0;
   background-color: #fff;
+  height: 40px;
 }
 
 
 /* TYPOGRAPHY */
 h1{
   margin:0 0 7px;
+      font-size: 44px;
+/*    margin: 0.67em 0;
+*/    font-weight: 100;
+  font-size: 34px;
 }
 h3{
   margin:0 0 7px;
+  font-size: 15px;
 }
 h4{
   margin: 0;
@@ -505,13 +511,13 @@ nav
   ul{
     list-style-type: none;
     padding:0;
+    margin-top: 7px;
     li{
       float:left;
       margin-right: 36px;
     }
   }
   a{
-  font-weight:bold;
   font-size: 12px;
   text-decoration: none;
   color:#333;
@@ -523,8 +529,11 @@ nav
 }
 
 .logo{
-  width: 40px;
-  padding: 7px 0 5px 15px;
+  display: inline-block;
+  img{
+    width: 40px;
+    padding: 0 0 5px 9px;
+  }
 }
 
 .portfolio{
@@ -534,18 +543,24 @@ nav
     -moz-transition: all 125ms ease-out;
     -o-transition: all 125ms ease-out;
     transition: all 125ms ease-out;
+    height: 150px;
+    overflow: hidden;
 
     position: relative;
     margin-bottom: 1px;
-/*    height: 160px;
-*/    .portfolio-box{
+    .portfolio-box{
       position: absolute;
       bottom:0;
       background: rgba(0,0,0,.4);
       padding: 0 20px;
       z-index:1000;
     }
-    img{width:100%;}
+    img{
+      width:100%;
+    }
+    &:nth-of-type(4) img{
+        left: 60%;
+    }
     h4{
       color:#fff;
       font-size: 14px;
@@ -661,7 +676,7 @@ nav
   @media screen and (min-width: 1000px) {
     p{
       max-width: 44em;
-      font-size: 1.1em;
+      font-size: 14px;
       line-height: 1.25em;
     }
   }
