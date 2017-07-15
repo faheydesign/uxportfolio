@@ -470,15 +470,21 @@ template {
 
 body {
   background: #ececec;
-  font-family: 'Lato', sans-serif;
+
+/*  background: #fff;
+*/font-family: 'Lato', sans-serif;
   color: #424141;
 }
 
 header{
-  max-width:1400px;
-  margin:3px auto 0;
+  /*max-width:1400px;*/
+  width:100%;
+  position: fixed;
+  top:0;
+  margin:0 auto;
   background-color: #fff;
   height: 40px;
+  border: 1px solid #ececec;
 }
 
 
@@ -492,12 +498,15 @@ h1{
 }
 h3{
   margin:0 0 7px;
-  font-size: 15px;
+  font-size: 20px;
 }
 h4{
   margin: 0;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 p{
+  font-size: 14px;
   margin-top: 3px;
   max-width: 34em;
 }
@@ -529,6 +538,9 @@ nav
 }
 
 .logo{
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 22px;
   display: inline-block;
   img{
     width: 40px;
@@ -588,8 +600,8 @@ nav
 
   .case_study{
   max-width: 1400px;
-  margin:0 auto;
-  background: transparent;
+  margin: 40px auto 0;
+  background: #ececec;
   img{
     width:100%;
   }
@@ -604,13 +616,35 @@ nav
 }
 .showcase.odd{
   background-color: transparent;
+  background: #ececec;
 }
 .img-sidebyside{
   padding: 10px 0;
 }
 
 .external-link{
-  color:#019bd0;
+    border: 1px solid;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 auto;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 20px 0;
+
+    background: #333;
+    color:#fff;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+.external-link:hover{
+    background: #fff;
+    color:#333;
 }
 
 @media screen and (min-width: 480px) {
@@ -634,14 +668,17 @@ nav
 }
 
 @media screen and (min-width: 768px){
-    .showcase, .logo{
-    padding-left:20px;
-    padding-right:20px;
+    .showcase{
+/*    padding-left:20px;
+    padding-right:20px;*/
+    padding: 40px 50px;
   }
   .row{
-    display: flex; 
+    display: flex;
+    clear:both;   /* TODO REPLACE WITH BETTER SOLUTION FLEXBOX */
   }
   .text-box{
+    padding:22px 0 30px;
     width:44%;
     margin-right:6%;
     &:last-of-type{ margin-right:0; }
