@@ -8,6 +8,8 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="http://www.faheydesign.net/favicon.ico?v=2" />
+
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -19,23 +21,24 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body id="homepg">
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
 <header>
-  <a href="/" class="logo"><img src="/images/logojf.svg"></a>
+  <a href="/" class="logo"><h2>faheydesign</h2></a>
   <nav>
     <ul>
-      <li><a href="/">Projects</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="mailto:faheydesign@gmail.com">Contact</a></li>
+<!--       <li><a href="/">Work</a></li>
+ --><!--       <li><a href="/about.html">About</a></li>-->
+      <li><a href="http://www.linkedin.com/in/faheydesign" target="new">LinkedIn</a></li>
+      <li><a href="mailto:faheydesign@gmail.com?Subject=Hello there!">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -46,51 +49,68 @@
       <h4>Getty Images</h4>
       <h3>Year in Focus 2016</h3>
     </div>
-    <img  src="images/gettyimages_fireworks.jpg" >
-<!--     <img  src="images/gettyimages_fireworks.jpg" 
-          srcset="images/test/test_img_376.jpg 375w,
-                  images/test/test_img_768.jpg 768w,
-                  images/test/test_img_1024.jpg 1024w" 
-          sizes="100%" 
-          alt="Year in Focus - fireworks"> -->
+           <picture>
+  <source srcset="images/homepg/yif_1400.jpg" media="(min-width: 900px)">
+  <source srcset="images/homepg/yif_768.jpg" media="(min-width: 500px)">
+  <source srcset="images/homepg/yif_414_2x.jpg" media="(min-width: 414px)">
+  <img srcset="images/homepg/yif_375_2x.jpg" alt="…">
+</picture>
   </a>
   <a href="/case_studies/rio.html" class="portfolio-item">
     <div class="portfolio-box">
       <h4>Getty Images</h4>
       <h3>Rio Olympics 2016</h3>
     </div>
-    <img  src="images/portfolio-thumb1.jpg" 
-          srcset="images/portfolio-thumb1.jpg 375w,
-                  images/olympics.jpg 768w,
-                  images/olympics.jpg 2000w" 
-          sizes="100%" 
-          alt="Usain Bolt crosses finish line">
-  </a>  <a href="/case_studies/social.html" class="portfolio-item">
+
+             <picture>
+  <source srcset="images/homepg/olympics_720_vertical_pane.jpg" media="(min-width: 900px)">
+  <source srcset="images/homepg/olympics_768.jpg" media="(min-width: 500px)">
+  <source srcset="images/homepg/olympics_414_2x.jpg" media="(min-width: 414px)">
+  <img srcset="images/homepg/olympics_375_2x.jpg" alt="…">
+</picture>
+
+  </a>
+  <a href="/case_studies/social.html" class="portfolio-item">
     <div class="portfolio-box">
       <h4>Getty Images</h4>
       <h3>Social Login</h3>
     </div>
-    <img  src="images/social.jpg" 
+   <!--  <img  src="images/social.jpg"
           srcset="images/portfolio-thumb1.jpg 375w,
                   images/olympics.jpg 768w,
-                  images/social.jpg 2000w" 
-          sizes="100%" 
-          alt="Usain Bolt crosses finish line">
-  </a>  <a href="/case_studies/personality.html" class="portfolio-item">
+                  images/social.jpg 2000w"
+          sizes="100%"
+          alt="Usain Bolt crosses finish line"> -->
+    <picture>
+      <source srcset="images/homepg/social_login_720_vertical_pane.jpg" media="(min-width: 900px)">
+      <source srcset="images/homepg/social_login_768.jpg" media="(min-width: 500px)">
+      <source srcset="images/homepg/social_login_414_2x.jpg" media="(min-width: 414px)">
+      <img srcset="images/homepg/social_login_375_2x.jpg" alt="…">
+    </picture>
+  </a>
+  <a href="/case_studies/personality.html" class="portfolio-item">
     <div class="portfolio-box">
       <h4>Getty Images</h4>
       <h3>Personality Page</h3>
     </div>
-    <img  src="images/portfolio-thumb1.jpg" 
+<!--     <img  src="images/portfolio-thumb1.jpg"
           srcset="images/portfolio-thumb1.jpg 375w,
                   images/olympics.jpg 768w,
-                  images/gene_wylder.jpg 2000w" 
-          sizes="100%" 
-          alt="Usain Bolt crosses finish line">
+                  images/gene_wylder.jpg 2000w"
+          sizes="100%"
+          alt="Usain Bolt crosses finish line"> -->
+    <picture>
+      <source srcset="images/homepg/gene_wylder_720_vertical_pane.jpg" media="(min-width: 900px)">
+      <source srcset="images/homepg/gene_wylder_768.jpg" media="(min-width: 500px)">
+      <source srcset="images/homepg/gene_wylder_414_2x.jpg" media="(min-width: 414px)">
+      <img srcset="images/homepg/gene_wylder_375_2x.jpg" alt="…">
+    </picture>
   </a>
- 
+
+
+
 </div>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -107,7 +127,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
